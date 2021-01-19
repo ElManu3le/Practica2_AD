@@ -24,6 +24,8 @@ public class HibernateUtil {
                 new StandardServiceRegistryBuilder().configure().build());
 
             session = sessionFactory.openSession();
+            session.createQuery("select e from cliente");
+
             
             
         }
