@@ -1,13 +1,21 @@
 package Practica;
 
-/**
- * Hello world!
- *
- */
+import java.sql.Connection;
+
+import org.hibernate.Hibernate;
+
+import Practica.HibernateUtil.HibernateUtil;
+
 public class App 
 {
-    public static void main( String[] args )
+    public static void main( String[] args ) throws Exception
     {
-        System.out.println( "Hello World!" );
+        HibernateUtil.setUp();
+
+        
+       
+       
+
+        
     }
 }
