@@ -53,11 +53,19 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "Cliente{" + "codigoCliente=" + codigoCliente + ", nombreCliente='" + nombreCliente + '\''
-                + ", nombreContacto='" + nombreContacto + '\'' + ", apellidoContacto='" + apellidoContacto + '\''
-                + ", telefono='" + telefono + '\'' + ", fax='" + fax + '\'' + ", lineaDireccion1='" + lineaDireccion1
-                + '\'' + ", lineaDireccion2='" + lineaDireccion2 + '\'' + ", ciudad='" + ciudad + '\'' + ", region='"
-                + region + '\'' + ", pais='" + pais + '\'' + ", codigoPostal='" + codigoPostal + '\''
-                + ", codigoEmpleadoPepVentas=" + codigoEmpleadoPepVentas + ", limiteCredito=" + limiteCredito + '}';
+        return "Cliente{" + "codigoCliente=" + codigoCliente 
+                + ", nombreCliente='" + nombreCliente + '\''
+                + ", nombreContacto='" + nombreContacto + '\'' 
+                + ", apellidoContacto='" + apellidoContacto + '\''
+                + ", telefono='" + telefono + '\'' 
+                + ", fax='" + fax + '\'' 
+                + ", lineaDireccion1='" + lineaDireccion1 + '\'' 
+                + ", lineaDireccion2='" + lineaDireccion2 + '\'' 
+                + ", ciudad='" + ciudad + '\'' 
+                + ", region='" + region + '\'' 
+                + ", pais='" + pais + '\'' 
+                + ", codigoPostal='" + codigoPostal + '\''
+                + ", codigoEmpleadoPepVentas=" + codigoEmpleadoPepVentas 
+                + ", limiteCredito=" + limiteCredito + '}';
     }
 }
