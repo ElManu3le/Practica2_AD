@@ -9,9 +9,8 @@ public class HibernateUtil {
 
     private static Session session;
 
-    private HibernateUtil(){
-        
-        
+    private HibernateUtil() {
+
     }
 
     public static Session setUp() throws Exception {
@@ -31,7 +30,5 @@ public class HibernateUtil {
         session.close();
 
     }
-
-	
 
 }

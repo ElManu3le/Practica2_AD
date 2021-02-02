@@ -51,21 +51,125 @@ public class Cliente {
     @Column(name = "limite_credito")
     private BigDecimal limiteCredito;
 
+    public Integer getCodigoCliente() {
+        return codigoCliente;
+    }
+
+    public void setCodigoCliente(Integer codigoCliente) {
+        this.codigoCliente = codigoCliente;
+    }
+
+    public String getNombreCliente() {
+        return nombreCliente;
+    }
+
+    public void setNombreCliente(String nombreCliente) {
+        this.nombreCliente = nombreCliente;
+    }
+
+    public String getNombreContacto() {
+        return nombreContacto;
+    }
+
+    public void setNombreContacto(String nombreContacto) {
+        this.nombreContacto = nombreContacto;
+    }
+
+    public String getApellidoContacto() {
+        return apellidoContacto;
+    }
+
+    public void setApellidoContacto(String apellidoContacto) {
+        this.apellidoContacto = apellidoContacto;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
+    public String getFax() {
+        return fax;
+    }
+
+    public void setFax(String fax) {
+        this.fax = fax;
+    }
+
+    public String getLineaDireccion1() {
+        return lineaDireccion1;
+    }
+
+    public void setLineaDireccion1(String lineaDireccion1) {
+        this.lineaDireccion1 = lineaDireccion1;
+    }
+
+    public String getLineaDireccion2() {
+        return lineaDireccion2;
+    }
+
+    public void setLineaDireccion2(String lineaDireccion2) {
+        this.lineaDireccion2 = lineaDireccion2;
+    }
+
+    public String getCiudad() {
+        return ciudad;
+    }
+
+    public void setCiudad(String ciudad) {
+        this.ciudad = ciudad;
+    }
+
+    public String getRegion() {
+        return region;
+    }
+
+    public void setRegion(String region) {
+        this.region = region;
+    }
+
+    public String getPais() {
+        return pais;
+    }
+
+    public void setPais(String pais) {
+        this.pais = pais;
+    }
+
+    public String getCodigoPostal() {
+        return codigoPostal;
+    }
+
+    public void setCodigoPostal(String codigoPostal) {
+        this.codigoPostal = codigoPostal;
+    }
+
+    public Integer getCodigoEmpleadoPepVentas() {
+        return codigoEmpleadoPepVentas;
+    }
+
+    public void setCodigoEmpleadoPepVentas(Integer codigoEmpleadoPepVentas) {
+        this.codigoEmpleadoPepVentas = codigoEmpleadoPepVentas;
+    }
+
+    public BigDecimal getLimiteCredito() {
+        return limiteCredito;
+    }
+
+    public void setLimiteCredito(BigDecimal limiteCredito) {
+        this.limiteCredito = limiteCredito;
+    }
+
     @Override
     public String toString() {
-        return "Cliente{" + "codigoCliente=" + codigoCliente 
-                + ", nombreCliente='" + nombreCliente + '\''
-                + ", nombreContacto='" + nombreContacto + '\'' 
-                + ", apellidoContacto='" + apellidoContacto + '\''
-                + ", telefono='" + telefono + '\'' 
-                + ", fax='" + fax + '\'' 
-                + ", lineaDireccion1='" + lineaDireccion1 + '\'' 
-                + ", lineaDireccion2='" + lineaDireccion2 + '\'' 
-                + ", ciudad='" + ciudad + '\'' 
-                + ", region='" + region + '\'' 
-                + ", pais='" + pais + '\'' 
-                + ", codigoPostal='" + codigoPostal + '\''
-                + ", codigoEmpleadoPepVentas=" + codigoEmpleadoPepVentas 
-                + ", limiteCredito=" + limiteCredito + '}';
+        return "Cliente{" + "codigoCliente=" + codigoCliente + ", nombreCliente='" + nombreCliente + '\''
+                + ", nombreContacto='" + nombreContacto + '\'' + ", apellidoContacto='" + apellidoContacto + '\''
+                + ", telefono='" + telefono + '\'' + ", fax='" + fax + '\'' + ", lineaDireccion1='" + lineaDireccion1
+                + '\'' + ", lineaDireccion2='" + lineaDireccion2 + '\'' + ", ciudad='" + ciudad + '\'' + ", region='"
+                + region + '\'' + ", pais='" + pais + '\'' + ", codigoPostal='" + codigoPostal + '\''
+                + ", codigoEmpleadoPepVentas=" + codigoEmpleadoPepVentas + ", limiteCredito=" + limiteCredito + '}';
     }
 }

@@ -1,14 +1,12 @@
 package Practica.Dao;
 
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 import org.hibernate.Session;
 import Practica.HibernateUtil.HibernateUtil;
 import Practica.ModelClass.Cliente;
+import Practica.Utilidades.Leer;
 
 public class ClienteDAO implements Dao<Cliente> {
-
-    
 
     @Override
     public Optional<Cliente> get(long id) {
@@ -26,7 +24,15 @@ public class ClienteDAO implements Dao<Cliente> {
     public void save(Cliente t) throws Exception {
         Session srf = HibernateUtil.setUp();
 
+        try {
 
+            srf.beginTransaction();
+            srf.save(t);
+            srf.getTransaction().commit();
+
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
 
     }
 
