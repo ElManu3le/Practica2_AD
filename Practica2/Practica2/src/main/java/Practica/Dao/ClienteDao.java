@@ -31,7 +31,7 @@ public class ClienteDAO implements Dao<Cliente> {
             srf.getTransaction().commit();
 
         } catch (Exception e) {
-            // TODO: handle exception
+           
         }
 
     }
