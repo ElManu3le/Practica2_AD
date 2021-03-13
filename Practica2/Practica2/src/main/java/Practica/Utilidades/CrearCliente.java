@@ -12,7 +12,10 @@ public class CrearCliente {
         Cliente sujetonuevo = new Cliente();
 
         System.out.println("Codigo de cliente nuevo");
-        int codigo_cliente = Leer.pedirEnteroValidar();/** el .pediCadena no hara falta hacer un Scanner teclado= new Scanner(Sysmten.in) ya que ya te piede una cadena ó int */
+        int codigo_cliente = Leer.pedirEnteroValidar();/**
+                                                        * el .pediCadena no hara falta hacer un Scanner teclado= new
+                                                        * Scanner(Sysmten.in) ya que ya te piede una cadena ó int
+                                                        */
 
         System.out.println("Dime el nombre del nuevo cliente");
         String nombre_cliente = Leer.pedirCadena();
@@ -55,10 +58,7 @@ public class CrearCliente {
         sujetonuevo.setRegion(region);
         sujetonuevo.setPais(pais);
         sujetonuevo.setCodigoPostal(codigo_postal);
-       
 
-
-        
         return null;
     }
 

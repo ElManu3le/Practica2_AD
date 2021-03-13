@@ -5,25 +5,26 @@ import java.util.Optional;
 
 import org.hibernate.Session;
 
-import Practica.ModelClass.Detalles_pedido;
+import Practica.ModelClass.Producto;
 
-public class DetallesDAO implements Dao<Detalles_pedido> {
+public class ProductoDAO implements Dao<Producto> {
+
     private Session session;
 
     @Override
-    public Optional<Detalles_pedido> get(long id) {
+    public Optional<Producto> get(long id) {
         // TODO Auto-generated method stub
-        return Optional.ofNullable(session.get(Detalles_pedido.class, id));
+        return Optional.ofNullable(session.get(Producto.class, id));
     }
 
     @Override
-    public List<Detalles_pedido> getAll() {
+    public List<Producto> getAll() {
         // TODO Auto-generated method stub
         return null;
     }
 
     @Override
-    public void save(Detalles_pedido t) throws Exception {
+    public void save(Producto t) throws Exception {
         try {
 
             session.beginTransaction();
@@ -38,14 +39,14 @@ public class DetallesDAO implements Dao<Detalles_pedido> {
     }
 
     @Override
-    public void update(Detalles_pedido t, String[] params) {
+    public void update(Producto t, String[] params) {
         session.update(t);
         session.getTransaction().commit();
 
     }
 
     @Override
-    public void delete(Detalles_pedido t) {
+    public void delete(Producto t) {
         session.remove(t);
 
     }

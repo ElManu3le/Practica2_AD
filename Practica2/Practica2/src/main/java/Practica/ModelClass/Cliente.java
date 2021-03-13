@@ -55,6 +55,28 @@ public class Cliente {
         return codigoCliente;
     }
 
+    public Cliente() {
+    }
+
+    public Cliente(Integer codigoCliente, String nombreCliente, String nombreContacto, String apellidoContacto,
+            String telefono, String fax, String lineaDireccion1, String lineaDireccion2, String ciudad, String region,
+            String pais, String codigoPostal, Integer codigoEmpleadoPepVentas, BigDecimal limiteCredito) {
+        this.codigoCliente = codigoCliente;
+        this.nombreCliente = nombreCliente;
+        this.nombreContacto = nombreContacto;
+        this.apellidoContacto = apellidoContacto;
+        this.telefono = telefono;
+        this.fax = fax;
+        this.lineaDireccion1 = lineaDireccion1;
+        this.lineaDireccion2 = lineaDireccion2;
+        this.ciudad = ciudad;
+        this.region = region;
+        this.pais = pais;
+        this.codigoPostal = codigoPostal;
+        this.codigoEmpleadoPepVentas = codigoEmpleadoPepVentas;
+        this.limiteCredito = limiteCredito;
+    }
+
     public void setCodigoCliente(Integer codigoCliente) {
         this.codigoCliente = codigoCliente;
     }
@@ -172,4 +194,5 @@ public class Cliente {
                 + region + '\'' + ", pais='" + pais + '\'' + ", codigoPostal='" + codigoPostal + '\''
                 + ", codigoEmpleadoPepVentas=" + codigoEmpleadoPepVentas + ", limiteCredito=" + limiteCredito + '}';
     }
+
 }

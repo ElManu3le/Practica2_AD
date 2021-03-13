@@ -1,56 +1,113 @@
 package Practica.ModelClass;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
+import javax.persistence.*;
 @Entity
 @Table(name = "pedido")
 
 public class Pedido {
 
     @Id
-    @Column(name = "codigo_producto")
-    private String cod_producto;
+    @Column(name = "codigo_pedido")
+    private int codigo_pedido;
+    
+    @Column(name = "fecha_pedido")
+    private String  fecha_pedido;
+    
+    
+    @Column(name = "fecha_esperada")
+    private String  fecha_esperada;
+                
+    
+    @Column(name = "fecha_entrega")
+    private String  fecha_entrega; 
+    
+    @Column(name = "estado")
+    private String  estado;
 
-    @Column(name = "nombre")
-    private String nombre;
 
-    @Column(name = "gamma")
-    private String gamma;
+    @Column(name = "comentarios")
+    private String  comentarios; 
+    
+    @Column(name = "codigo_cliente")
+    private int  codigo_cliente;
 
-    @Column(name = "dimensiones")
-    private String dimensiones;
+    public Pedido() {
+    }
 
-    @Column(name = "proveedor")
-    private String proveedor;
+    public Pedido(int codigo_pedido, String fecha_pedido, String fecha_esperada, String fecha_entrega, String estado,
+            String comentarios, int codigo_cliente) {
+        this.codigo_pedido = codigo_pedido;
+        this.fecha_pedido = fecha_pedido;
+        this.fecha_esperada = fecha_esperada;
+        this.fecha_entrega = fecha_entrega;
+        this.estado = estado;
+        this.comentarios = comentarios;
+        this.codigo_cliente = codigo_cliente;
+    }
 
-    @Column(name = "descripcion")
-    private String descripcion;
+    public int getCodigo_pedido() {
+        return codigo_pedido;
+    }
 
-    @Column(name = "cantidad en stock")
-    private String cantStock;
+    public void setCodigo_pedido(int codigo_pedido) {
+        this.codigo_pedido = codigo_pedido;
+    }
 
-    @Column(name = "precio_venta")
-    private float precio_venta;
+    public String getFecha_pedido() {
+        return fecha_pedido;
+    }
 
-    @Column(name = "precio_proveedo")
-    private float precio_proveedor;
+    public void setFecha_pedido(String fecha_pedido) {
+        this.fecha_pedido = fecha_pedido;
+    }
+
+    public String getFecha_esperada() {
+        return fecha_esperada;
+    }
+
+    public void setFecha_esperada(String fecha_esperada) {
+        this.fecha_esperada = fecha_esperada;
+    }
+
+    public String getFecha_entrega() {
+        return fecha_entrega;
+    }
+
+    public void setFecha_entrega(String fecha_entrega) {
+        this.fecha_entrega = fecha_entrega;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+
+    public String getComentarios() {
+        return comentarios;
+    }
+
+    public void setComentarios(String comentarios) {
+        this.comentarios = comentarios;
+    }
+
+    public int getCodigo_cliente() {
+        return codigo_cliente;
+    }
+
+    public void setCodigo_cliente(int codigo_cliente) {
+        this.codigo_cliente = codigo_cliente;
+    }
 
     @Override
     public String toString() {
-        return "Pedido [cantStock=" + cantStock 
-        + ", cod_producto=" + cod_producto 
-        + ", descripcion=" + descripcion
-        + ", dimensiones=" + dimensiones 
-        + ", gamma=" + gamma 
-        + ", nombre=" + nombre 
-        + ", precio_proveedor=" + precio_proveedor 
-        + ", precio_venta=" + precio_venta 
-        + ", proveedor=" + proveedor + "]";
+        return "Pedido [codigo_cliente=" + codigo_cliente + ", codigo_pedido=" + codigo_pedido + ", comentarios="
+                + comentarios + ", estado=" + estado + ", fecha_entrega=" + fecha_entrega + ", fecha_esperada="
+                + fecha_esperada + ", fecha_pedido=" + fecha_pedido + "]";
     }
 
-    
-    
+   
+
 }
