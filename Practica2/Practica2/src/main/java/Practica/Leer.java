@@ -1,4 +1,4 @@
-package Practica.Utilidades;
+package Practica;
 
 import java.io.*;
 

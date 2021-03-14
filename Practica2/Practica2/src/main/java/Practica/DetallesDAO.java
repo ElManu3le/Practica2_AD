@@ -1,30 +1,29 @@
-package Practica.Dao;
+package Practica;
 
 import java.util.List;
 import java.util.Optional;
 
 import org.hibernate.Session;
 
-import Practica.ModelClass.Producto;
+import Practica.Detalles_pedido;
 
-public class ProductoDAO implements Dao<Producto> {
-
+public class DetallesDAO implements Dao<Detalles_pedido> {
     private Session session;
 
     @Override
-    public Optional<Producto> get(long id) {
+    public Optional<Detalles_pedido> get(long id) {
         // TODO Auto-generated method stub
-        return Optional.ofNullable(session.get(Producto.class, id));
+        return Optional.ofNullable(session.get(Detalles_pedido.class, id));
     }
 
     @Override
-    public List<Producto> getAll() {
+    public List<Detalles_pedido> getAll() {
         // TODO Auto-generated method stub
         return null;
     }
 
     @Override
-    public void save(Producto t) throws Exception {
+    public void save(Detalles_pedido t) throws Exception {
         try {
 
             session.beginTransaction();
@@ -39,14 +38,14 @@ public class ProductoDAO implements Dao<Producto> {
     }
 
     @Override
-    public void update(Producto t, String[] params) {
+    public void update(Detalles_pedido t, String[] params) {
         session.update(t);
         session.getTransaction().commit();
 
     }
 
     @Override
-    public void delete(Producto t) {
+    public void delete(Detalles_pedido t) {
         session.remove(t);
 
     }

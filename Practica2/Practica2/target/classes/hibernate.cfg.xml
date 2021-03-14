@@ -27,10 +27,10 @@
       </property>
 
       <!-- List of XML mapping files -->
-      <mapping class="java\Practica\ModelClass.Cliente" />
-      <mapping class="ItacaDAM.SQL_practica.ProductoEntity" />
-      <mapping class="ItacaDAM.SQL_practica.DetallesPedidosEntity" />
-      <mapping class="ItacaDAM.SQL_practica.PedidosEntity" />
+      <mapping class="java.Practica.Cliente" />
+      <mapping class="java.Practica.Producto" />
+      <mapping class="java.Practica.Detalles_pedido" />
+      <mapping class="java.Practica.Pedido" />
 
 
    </session-factory>

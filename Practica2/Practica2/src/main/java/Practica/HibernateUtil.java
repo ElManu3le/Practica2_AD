@@ -1,4 +1,4 @@
-package Practica.HibernateUtil;
+package Practica;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

@@ -1,4 +1,4 @@
-package Practica.ModelClass;
+package Practica;
 
 import javax.persistence.*;
 

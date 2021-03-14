@@ -1,11 +1,11 @@
 package Practica;
 
-import Practica.Dao.ClienteDAO;
-import Practica.Dao.DetallesDAO;
-import Practica.Dao.ProductoDAO;
-import Practica.ModelClass.Cliente;
-import Practica.ModelClass.Producto;
-import Practica.Utilidades.Leer;
+import Practica.ClienteDAO;
+import Practica.DetallesDAO;
+import Practica.ProductoDAO;
+import Practica.Cliente;
+import Practica.Producto;
+import Practica.Leer;
 
 public class App {
     public static void main(String[] args) throws Exception {

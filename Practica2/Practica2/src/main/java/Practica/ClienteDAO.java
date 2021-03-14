@@ -1,10 +1,10 @@
-package Practica.Dao;
+package Practica;
 
 import java.util.*;
 import org.hibernate.Session;
-import Practica.HibernateUtil.HibernateUtil;
-import Practica.ModelClass.Cliente;
-import Practica.Utilidades.Leer;
+import Practica.HibernateUtil;
+import Practica.Cliente;
+import Practica.Leer;
 
 public class ClienteDAO implements Dao<Cliente> {
 

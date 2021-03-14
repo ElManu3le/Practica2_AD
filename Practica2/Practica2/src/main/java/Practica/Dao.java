@@ -1,4 +1,4 @@
-package Practica.Dao;
+package Practica;
 
 import java.util.List;
 import java.util.Optional;
